@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La vitesse de la lumière</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas id="particlesCanvas"></canvas>
-	
-	<p class="container">test</p>
-	<script src="script.js"></script>
 
+    <!-- CONTENEUR DES "PAGES" -->
+    <div class="tab-wrapper">
+
+        <!-- PAGE PRINCIPALE -->
+        <div id="main" class="tab-content active">
+            <p class="container">🌌 Bienvenue sur la page principale !</p>
+            <div class="arrow right" onclick="switchTab('test1')">
+                <img src="right.png" alt="➡">
+            </div>
+        </div>
+
+        <!-- PAGE TEST 1 -->
+        <div id="test1" class="tab-content">
+            <div class="arrow left" onclick="switchTab('main')">
+                <img src="left.png" alt="⬅">
+            </div>
+            <p class="container">🧪 Ceci est Test 1 !</p>
+            <div class="arrow right" onclick="switchTab('test2')">
+                <img src="right.png" alt="➡">
+            </div>
+        </div>
+
+        <!-- PAGE TEST 2 -->
+        <div id="test2" class="tab-content">
+            <div class="arrow left" onclick="switchTab('test1')">
+                <img src="left.png" alt="⬅">
+            </div>
+            <p class="container">🔬 Bienvenue sur Test 2 !</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
     <script>
-		const audio = new Audio("page1.mp3");
+        const audio = new Audio("page1.mp3");
         audio.loop = false;
         audio.volume = 1;
 
@@ -22,7 +51,6 @@
                 console.error("La lecture de la musique a échoué : ", err);
             });
         }, { once: true });
-	
-     </script>
+    </script>
 </body>
 </html>
