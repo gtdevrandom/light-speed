@@ -67,3 +67,16 @@
 
         initParticles();
         animateParticles();
+		
+		
+function switchTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    const target = document.getElementById(tabId);
+    if (target) {
+        target.classList.add('active');
+    }
+}
