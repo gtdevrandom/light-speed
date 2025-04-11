@@ -2,3 +2,16 @@
 
 On désigne généralement par c, la vitesse de propagation de la lumière.
 
+https://fr.wikipedia.org/wiki/Exp%C3%A9rience_de_Fizeau
+
+Description de l'expérience
+
+- Dispositif : Fizeau a utilisé une roue dentée tournante et un miroir placé à une grande distance. La roue dentée était disposée de manière à être éclairée par une source lumineuse, et la lumière passait à travers les espaces entre les dents de la roue.
+
+- Mesure de la vitesse : La lumière, une fois passée à travers les interstices de la roue, se dirigeait vers un miroir placé à une distance d'environ 8 kilomètres. Ce miroir renvoyait la lumière vers la roue.
+
+- Effet de la rotation de la roue : Fizeau a réglé la vitesse de rotation de la roue dentée de manière à ce que la lumière réfléchie retourne à la roue au moment où cette dernière tournait suffisamment vite pour que la lumière ne passe plus par les mêmes espaces entre les dents, mais soit bloquée par une dent.
+
+- Résultats : La vitesse de la lumière était calculée en fonction du temps que mettait la lumière à aller et revenir jusqu'au miroir, en tenant compte de la rotation de la roue.
+
+Fizeau a déterminé que la lumière se propageait à environ 313 000 kilomètres par seconde dans l'air. Ce résultat était assez proche de la valeur moderne de la vitesse de la lumière dans le vide, qui est de 299 792 kilomètres par seconde.
