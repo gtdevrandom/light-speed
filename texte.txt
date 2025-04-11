@@ -1,0 +1,4 @@
+299 792 458 m / s
+
+On désigne généralement par c, la vitesse de propagation de la lumière.
+
