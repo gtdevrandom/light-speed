@@ -1,0 +1,43 @@
+		body {
+			position: relative;
+			background-color: black; /* Fond noir */
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+			text-align: center;
+			color: white;
+		}
+
+		body::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: url('background.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.5;
+			z-index: -1;
+		}
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+		
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(30,30,30, 0.96);
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(53,33,75, 0.9);
+            position: relative;
+            z-index: 1;
+			font-family: serif;
+        }

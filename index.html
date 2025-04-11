@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vitesse de la lumière</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+	
+	<p class="container">test</p>
+	<script src="script.js"></script>
+
+    <script>
+		const audio = new Audio("page1.mp3");
+        audio.loop = false;
+        audio.volume = 1;
+
+        document.addEventListener("click", () => {
+            audio.play().catch(err => {
+                console.error("La lecture de la musique a échoué : ", err);
+            });
+        }, { once: true });
+	
+     </script>
+</body>
+</html>
