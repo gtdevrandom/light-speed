@@ -61,6 +61,29 @@
     z-index: 2;
 }
 
+.hide-ui {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+
+#hyperspaceCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#hyperspaceCanvas.active {
+    opacity: 1;
+}
+
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -103,5 +126,17 @@
     font-size: 1.4em;
     color: #fff;
     backdrop-filter: blur(5px);
+}
+
+.audio-controls-global {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(20, 20, 20, 0.9);
+    padding: 10px 20px;
+    border-radius: 15px;
+    z-index: 999;
+    box-shadow: 0 0 10px #58a6ff;
 }
 
