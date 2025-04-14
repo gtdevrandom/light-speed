@@ -118,7 +118,7 @@ function animateHyperspace() {
 }
 
 function launchHyperspaceEffect() {
-    createStars(300); // Nombre de "traînées d’étoiles"
+    createStars(600); // Nombre de "traînées d’étoiles"
     hyperspaceCanvas.classList.add('active');
     animateHyperspace();
 }
