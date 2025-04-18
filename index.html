@@ -8,44 +8,27 @@
 </head>
 <body>
 
-    <!-- CANVAS de fond -->
     <canvas id="particlesCanvas"></canvas>
     <canvas id="hyperspaceCanvas"></canvas>
 
-    <!-- INTERFACE -->
     <div id="ui-wrapper">
         <div class="tab-wrapper">
 
-            <!-- PAGE PRINCIPALE -->
             <div id="main" class="tab-content active">
                 <div class="container">
                     <h1>🌌 La vitesse de la lumière 🌠</h1>
                     <h2>L'expérience de Fizeau</h2>
                 </div>
-                <div class="arrow right" onclick="switchTab('test1')" aria-label="Aller à Test 1">
-                    ▶
-                </div>
             </div>
 
-            <!-- PAGE TEST 1 -->
             <div id="test1" class="tab-content">
-                <div class="arrow left" onclick="switchTab('main')" aria-label="Retour à la page principale">
-                    ◀
-                </div>
                 <div class="container">
                     <h2>Test 1</h2>
                     <p>Contenu expérimental à venir...</p>
                 </div>
-                <div class="arrow right" onclick="switchTab('test2')" aria-label="Aller à Test 2">
-                    ▶
-                </div>
             </div>
 
-            <!-- PAGE TEST 2 -->
             <div id="test2" class="tab-content">
-                <div class="arrow left" onclick="switchTab('test1')" aria-label="Retour à Test 1">
-                    ◀
-                </div>
                 <div class="container">
                     <h2>Test 2</h2>
                     <p>Graphiques, mesures, conclusions...</p>
@@ -54,17 +37,19 @@
 
         </div>
 
-        <!-- CONTROLES AUDIO -->
+        <div class="tab-navigation">
+            <button onclick="prevTab()" aria-label="Revenir à l’onglet précédent">⏪ Retour</button>
+            <button onclick="nextTab()" aria-label="Aller à l’onglet suivant à la vitesse de la lumière">⚡ Lumière</button>
+        </div>
+
         <div class="audio-controls-global">
-            <label for="volume">Volume</label>
+            <label for="volume">Volume : </label>
             <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
-            <button id="play">▶️ Play</button>
-            <button id="stop">⏹️ Stop</button>
+            <button id="playPause">▶️ Play</button>
             <button id="replay">🔁 Rejouer</button>
         </div>
     </div>
 
-    <!-- SCRIPT PRINCIPAL -->
     <script src="script.js"></script>
 
 </body>
