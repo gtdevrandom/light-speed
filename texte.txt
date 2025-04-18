@@ -1,0 +1,60 @@
+299 792 458 m / s
+
+On désigne généralement par c, la vitesse de propagation de la lumière.
+
+https://fr.wikipedia.org/wiki/Exp%C3%A9rience_de_Fizeau
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+L'expérience de Fizeau, réalisée par le physicien français Hippolyte Fizeau en 1849, est une expérience fondamentale en optique, qui a permis de mesurer la vitesse de la lumière dans un milieu transparent (l'air). Cette expérience a été une des premières à donner une estimation relativement précise de la vitesse de la lumière et a contribué à la validation de la théorie ondulatoire de la lumière.
+Contexte et objectifs de l'expérience
+
+Avant l'expérience de Fizeau, la vitesse de la lumière était encore inconnue. Des chercheurs comme Isaac Newton avaient suggéré que la lumière se déplaçait instantanément, mais d'autres, comme Thomas Young et Augustin-Jean Fresnel, soutenaient l'idée que la lumière avait une vitesse finie.
+
+Fizeau cherchait à mesurer la vitesse de la lumière dans un tube fermé contenant de l'eau et à comprendre comment cette vitesse pourrait être affectée par la réfraction (le changement de direction de la lumière lorsqu'elle passe d'un milieu à un autre).
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+Description de l'expérience
+
+- Dispositif : Fizeau a utilisé une roue dentée tournante et un miroir placé à une grande distance. La roue dentée était disposée de manière à être éclairée par une source lumineuse, et la lumière passait à travers les espaces entre les dents de la roue.
+
+- Mesure de la vitesse : La lumière, une fois passée à travers les interstices de la roue, se dirigeait vers un miroir placé à une distance d'environ 8 kilomètres. Ce miroir renvoyait la lumière vers la roue.
+
+- Effet de la rotation de la roue : Fizeau a réglé la vitesse de rotation de la roue dentée de manière à ce que la lumière réfléchie retourne à la roue au moment où cette dernière tournait suffisamment vite pour que la lumière ne passe plus par les mêmes espaces entre les dents, mais soit bloquée par une dent.
+
+- Résultats : La vitesse de la lumière était calculée en fonction du temps que mettait la lumière à aller et revenir jusqu'au miroir, en tenant compte de la rotation de la roue.
+
+Fizeau a déterminé que la lumière se propageait à environ 313 000 kilomètres par seconde dans l'air. Ce résultat était assez proche de la valeur moderne de la vitesse de la lumière dans le vide, qui est de 299 792 kilomètres par seconde.
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+Mesure de la vitesse de la lumière : L'expérience de Fizeau a permis de déterminer pour la première fois la vitesse de la lumière dans un milieu matériel (l'air). Bien que la vitesse de la lumière dans le vide ait été mesurée auparavant de manière théorique, l'expérience de Fizeau a permis d'obtenir une mesure plus précise dans un milieu réel. Il a trouvé que la vitesse de la lumière dans l'air était d'environ 313 000 km/s, ce qui est assez proche de la valeur moderne de 299 792 km/s dans le vide.
+
+Confirmation de la nature matérielle du milieu : Fizeau a utilisé un dispositif dans lequel un faisceau de lumière passait à travers un écoulement d'eau. Il a observé que la vitesse de la lumière dans ce milieu était modifiée par la vitesse du fluide. Cela a confirmé que la lumière se propageait à travers des milieux matériels de manière différente, par rapport à la propagation dans le vide. Cette observation a contribué à une meilleure compréhension du comportement des ondes lumineuses dans différents milieux.
+
+Première mesure de la vitesse de la lumière à travers un milieu matériel : L'expérience a fourni une méthode pour mesurer la vitesse de la lumière dans des conditions réelles. Cela a ouvert la voie à d'autres expériences visant à mesurer la vitesse de la lumière dans différents milieux (eau, verre, etc.), ce qui a été fondamental pour la physique optique et la théorie des ondes.
+
+Renforcement de la théorie ondulatoire de la lumière : L'expérience de Fizeau a fourni des preuves expérimentales en faveur de la théorie ondulatoire de la lumière, soutenue par des scientifiques comme Augustin-Jean Fresnel et Thomas Young. En observant la diffraction et les effets de vitesse de la lumière dans différents milieux, Fizeau a renforcé l'idée que la lumière se comporte comme une onde, ce qui a été déterminant pour les développements ultérieurs de l'optique ondulatoire.
+
+Application aux progrès de la physique moderne : Bien que l'expérience de Fizeau ait été réalisée dans un cadre relativement simple, elle a fourni des bases essentielles pour des travaux plus complexes à venir, notamment ceux liés à la théorie de la relativité d'Albert Einstein au XXe siècle. La mesure de la vitesse de la lumière a joué un rôle central dans la formulation de concepts fondamentaux de la physique moderne, comme la constance de la vitesse de la lumière dans tous les référentiels.
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+Mesure de la vitesse de la lumière : Avant Fizeau, la mesure précise de la vitesse de la lumière était un défi. Des expériences avaient été menées par des scientifiques comme Galilée et Roemer, mais elles n'avaient pas permis une mesure très précise. Fizeau a utilisé un dispositif novateur pour mesurer la vitesse de la lumière, en faisant passer un faisceau lumineux à travers un dispositif constitué de miroirs placés à plusieurs kilomètres de distance.
+
+Méthode de Fizeau : Fizeau a utilisé une roue dentée en rotation rapide pour créer un faisceau lumineux. Ce faisceau était réfléchi par un miroir situé à environ 8 kilomètres de distance. Le faisceau retournait alors vers la roue. En ajustant la vitesse de rotation de la roue et en observant le moment où le faisceau retournait au point d'origine (en raison du mouvement de la roue), Fizeau a pu calculer la vitesse de la lumière. Il a trouvé une valeur d’environ 313 000 km/s, qui était remarquablement proche de la valeur exacte aujourd’hui connue (environ 299 792 km/s).
+
+Première mesure précise : Cette expérience a fourni la première mesure relativement précise de la vitesse de la lumière, bien avant les expérimentations ultérieures de Michelson, qui a perfectionné la méthode en 1879. C’était une avancée significative pour la science du XIXe siècle.
+
+Confirmation de la nature finie de la vitesse de la lumière : L'expérience de Fizeau a confirmé que la lumière a une vitesse finie, ce qui était une idée déjà suggérée par Roemer. Cette constatation a permis de renforcer les théories physiques de l'époque et a ouvert la voie à de nombreuses explorations sur la nature de la lumière.
+
+Impact sur la théorie électromagnétique de Maxwell : Les résultats de Fizeau ont été importants pour les théories de l’électromagnétisme de James Clerk Maxwell, qui prédisait que la lumière était une onde électromagnétique. La mesure de la vitesse de la lumière par Fizeau a donc contribué à confirmer que la lumière se propageait sous forme d'ondes, ce qui a été un élément clé dans l’évolution des théories sur la lumière et l’électromagnétisme.
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
