@@ -1,4 +1,3 @@
-// === PARTICULES DE FOND ===
 const canvas = document.getElementById('particlesCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -34,7 +33,6 @@ class Particle {
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
-
         if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
     }
@@ -54,9 +52,9 @@ function initParticles() {
 
 function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particlesArray.forEach(particle => {
-        particle.update();
-        particle.draw();
+    particlesArray.forEach(p => {
+        p.update();
+        p.draw();
     });
     requestAnimationFrame(animateParticles);
 }
@@ -65,7 +63,6 @@ initParticles();
 animateParticles();
 
 
-// === HYPERSPACE EFFECT ===
 const hyperspaceCanvas = document.getElementById('hyperspaceCanvas');
 const hCtx = hyperspaceCanvas.getContext('2d');
 let stars = [];
@@ -122,61 +119,88 @@ function activateHyperspaceEffect() {
 }
 
 
-// === AUDIO ===
 const audios = {
     main: new Audio('musiques/musique1.mp3'),
     test1: new Audio('musiques/musique2.mp3'),
     test2: new Audio('musiques/musique3.mp3')
 };
-
 Object.values(audios).forEach(audio => {
     audio.loop = true;
     audio.volume = 1;
 });
 
-let currentTab = 'main';
+const tabIds = ['main', 'test1', 'test2'];
+let currentTabIndex = 0;
+let currentTab = tabIds[currentTabIndex];
 let currentAudio = audios[currentTab];
 
+const TRANSITION_TIME = 1000;
 
-// === SWITCH TAB AVEC TRANSITION & AUDIO ===
 function switchTab(tabId) {
     if (tabId === currentTab) return;
 
     activateHyperspaceEffect();
 
-    const currentContent = document.getElementById(currentTab);
-    const nextContent = document.getElementById(tabId);
+    const currentTabElement = document.getElementById(currentTab);
+    currentTabElement.classList.remove('active');
 
-    currentContent.classList.remove('active');
-    nextContent.classList.add('active');
+    setTimeout(() => {
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+        const newTab = document.getElementById(tabId);
+        newTab.classList.add('active');
 
-    // Changement audio
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+        currentTab = tabId;
+        currentTabIndex = tabIds.indexOf(tabId);
+        currentAudio = audios[tabId];
+        currentAudio.volume = volumeSlider.value;
+        currentAudio.play();
+
+        playPauseBtn.textContent = '⏸️ Pause';
+        isPlaying = true;
+
+    }, TRANSITION_TIME);
+}
+
+function nextTab() {
+    if (currentTabIndex < tabIds.length - 1) {
+        switchTab(tabIds[currentTabIndex + 1]);
     }
+}
 
-    currentTab = tabId;
-    currentAudio = audios[currentTab];
-    currentAudio.volume = document.getElementById('volume').value;
-    currentAudio.play();
+function prevTab() {
+    if (currentTabIndex > 0) {
+        switchTab(tabIds[currentTabIndex - 1]);
+    }
 }
 
 
-// === CONTROLES AUDIO ===
-document.getElementById('play').addEventListener('click', () => {
-    currentAudio.play();
+const playPauseBtn = document.getElementById('playPause');
+const replayBtn = document.getElementById('replay');
+const volumeSlider = document.getElementById('volume');
+let isPlaying = false;
+
+playPauseBtn.addEventListener('click', () => {
+    if (isPlaying) {
+        currentAudio.pause();
+        playPauseBtn.textContent = "▶️ Play";
+    } else {
+        currentAudio.play();
+        playPauseBtn.textContent = "⏸️ Pause";
+    }
+    isPlaying = !isPlaying;
 });
 
-document.getElementById('stop').addEventListener('click', () => {
-    currentAudio.pause();
-});
-
-document.getElementById('replay').addEventListener('click', () => {
+replayBtn.addEventListener('click', () => {
     currentAudio.currentTime = 0;
     currentAudio.play();
+    playPauseBtn.textContent = "⏸️ Pause";
+    isPlaying = true;
 });
 
-document.getElementById('volume').addEventListener('input', (e) => {
+volumeSlider.addEventListener('input', (e) => {
     currentAudio.volume = parseFloat(e.target.value);
 });
