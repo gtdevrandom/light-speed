@@ -121,15 +121,19 @@ function activateHyperspaceEffect() {
 
 const audios = {
     main: new Audio('musiques/musique1.mp3'),
-    test1: new Audio('musiques/musique2.mp3'),
-    test2: new Audio('musiques/musique3.mp3')
+    p1: new Audio('musiques/musique2.mp3'),
+    p2: new Audio('musiques/musique3.mp3'),
+	p3: new Audio('musiques/musique4.mp3'),
+	p4: new Audio('musiques/musique5.mp3'),
+	p5: new Audio('musiques/musique6.mp3')
+
 };
 Object.values(audios).forEach(audio => {
     audio.loop = true;
     audio.volume = 1;
 });
 
-const tabIds = ['main', 'test1', 'test2'];
+const tabIds = ['main', 'p1', 'p2', 'p3', 'p4', 'p5'];
 let currentTabIndex = 0;
 let currentTab = tabIds[currentTabIndex];
 let currentAudio = audios[currentTab];
@@ -204,3 +208,13 @@ replayBtn.addEventListener('click', () => {
 volumeSlider.addEventListener('input', (e) => {
     currentAudio.volume = parseFloat(e.target.value);
 });
+
+function openModal(title, imageSrc) {
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-image').src = imageSrc;
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
