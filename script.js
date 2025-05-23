@@ -126,14 +126,17 @@ const audios = {
 	p3: new Audio('musiques/musique4.mp3'),
 	p4: new Audio('musiques/musique5.mp3'),
 	p5: new Audio('musiques/musique6.mp3')
-
+	p6: new Audio('musiques/musique7.mp3')
+	p7: new Audio('musiques/musique8.mp3')
+	p8: new Audio('musiques/musique9.mp3')
+	p9: new Audio('musiques/musique10.mp3')
 };
 Object.values(audios).forEach(audio => {
     audio.loop = true;
     audio.volume = 1;
 });
 
-const tabIds = ['main', 'p1', 'p2', 'p3', 'p4', 'p5'];
+const tabIds = ['main', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6','p7','p8','p9'];
 let currentTabIndex = 0;
 let currentTab = tabIds[currentTabIndex];
 let currentAudio = audios[currentTab];
