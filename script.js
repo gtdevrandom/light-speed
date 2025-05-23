@@ -120,16 +120,13 @@ function activateHyperspaceEffect() {
 
 
 const audios = {
-    main: new Audio('musiques/musique1.mp3'),
-    p1: new Audio('musiques/musique2.mp3'),
-    p2: new Audio('musiques/musique3.mp3'),
-	p3: new Audio('musiques/musique4.mp3'),
-	p4: new Audio('musiques/musique5.mp3'),
-	p5: new Audio('musiques/musique6.mp3'),
-	p6: new Audio('musiques/musique7.mp3'),
-	p7: new Audio('musiques/musique8.mp3'),
-	p8: new Audio('musiques/musique9.mp3'),
-	p9: new Audio('musiques/musique10.mp3')
+    p2: new Audio('musiques/musique1.m4a'),
+	p3: new Audio('musiques/musique2.m4a'),
+	p4: new Audio('musiques/musique3.m4a'),
+	p6: new Audio('musiques/musique4.m4a'),
+	p7: new Audio('musiques/musique5.m4a'),
+	p8: new Audio('musiques/musique6.m4a'),
+	p9: new Audio('musiques/musique7.m4a')
 };
 Object.values(audios).forEach(audio => {
     audio.loop = true;
