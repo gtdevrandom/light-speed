@@ -1,154 +1,176 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>La vitesse de la lumière</title>
-        <link rel="stylesheet" href="style.css" />
-		  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <canvas id="particlesCanvas"></canvas>
-        <canvas id="hyperspaceCanvas"></canvas>
-        <div id="ui-wrapper">
-            <div class="tab-wrapper">
-                <div id="main" class="tab-content active">
-                    <div class="container">
-                        <h1>🌌 La vitesse de la lumière 🌠</h1>
-                        <h2>L'expérience de Fizeau</h2>
-                    </div>
-                </div>
-                <div id="p1" class="tab-content">
-                    <div class="container">
-                        <h2>Sommaire</h2>
-                        <p>
-                            <strong>I.</strong> Introduction : Pourquoi mesurer la vitesse de la lumière ?<br />
-                            <strong>II.</strong> Le contexte scientifique avant Fizeau<br />
-                            <strong>III.</strong> L’expérience de Fizeau (1849) <br />
-                            <strong>IV.</strong> Apports immédiats de l’expérience <br />
-                            <strong>V.</strong> Progrès permis par l’expérience de Fizeau <br />
-                            <strong>VI.</strong> Héritage et lien avec aujourd’hui<br />
-                            <strong>VII.</strong> Conclusion<br />
-                        </p>
-                    </div>
-                </div>
-                <div id="p2" class="tab-content">
-                    <div class="container">
-                        <h1>🌟 La lumière voyage-t-elle instantanément ?</h1>
-                        <p>
-                            Débat ancien : lumière instantanée (Platon, Descartes) 🆚 vitesse finie (Galilée, Römer) ⚖️<br />
-                            Besoin scientifique du XIXe siècle 🧪 : précision 📏, progrès en optique 🔬, télécommunications naissantes 📡.
-                        </p>
-                    </div>
-                </div>
-                <div id="p3" class="tab-content">
-                    <div class="container">
-                        <h1>🚀 Premières tentatives :</h1>
-                        <p>
-                            Galilée (XVIIe siècle) 🔭 : méthode imprécise avec lanternes 🏮 → vitesse trop rapide à mesurer ⚡.<br />
-                            Römer (1676) 🌌 : mesure indirecte avec les éclipses des lunes de Jupiter 🪐 → première estimation (214 000 km/s) 📏.<br />
-                            <br />
-                            Limites de ces approches ⚠️ : dépendance aux phénomènes astronomiques 🌠, faible précision 🎯.
-                        </p>
-                    </div>
-                </div>
-                <div id="p4" class="tab-content">
-                    <div class="container">
-                        <h1>💡 L’expérience de Fizeau (1849)</h1>
-                        <p>
-                            <strong>🔬 Principe de l’expérience :</strong><br />
-                            Lumière envoyée sur un miroir via une roue dentée ⚙️.<br />
-                            Réflexion sur un miroir à 8 km 📏, retour à la roue 🔁.<br />
-                            À une certaine vitesse de rotation, la lumière est bloquée par la dent suivante ❌🦷 → mesure du temps aller-retour ⏱️.<br />
-                            <br />
-                            <strong>📊 Résultat obtenu :</strong><br />
-                            Estimation de la vitesse de la lumière à ~313 000 km/s 🚀 (très proche de la valeur actuelle ✅).
-                        </p>
-                    </div>
-                </div>
-				<div id="p5" class="tab-content">
-					<div class="container">
-						<h1>Vidéo de l'expérience</h1>
-						<div class="video-item">
-							<video controls width="100%">
-								<source src="movie/vid1.mp4" type="video/mp4">
-								Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-							</video>
-						</div>
-					</div>
-				</div>
 
-                <div id="p6" class="tab-content">
-                    <div class="container">
-                        <h1>⚡ Apports immédiats de l’expérience</h1>
-                        <p>
-                            <strong>🧪 Méthode expérimentale directe :</strong> première mesure purement terrestre 🌍.<br />
-                            <strong>🌈 Confirmation de la vitesse finie de la lumière :</strong> appui aux théories ondulatoires 🌊.<br />
-                            <strong>🔧 Avancée technologique :</strong> montre qu’on peut mesurer des vitesses extrêmes 🚀 avec des outils mécaniques ⚙️.<br />
-                        </p>
-                    </div>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La vitesse de la lumière</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
 
-                <div id="p7" class="tab-content">
-                    <div class="container">
-                        <h1>🚀 Progrès permis par l’expérience de Fizeau</h1>
-                        <p>
-                            🔬 <strong>Améliorations par Léon Foucault :</strong> utilisation de miroirs tournants 🪞➡️🌀 → plus grande précision 🎯.<br />
-                            <br />
-                            📏 <strong>Développement de la métrologie :</strong> la lumière devient une référence pour les mesures de distance 🌐.<br />
-                            <br />
-                            🧠 <strong>Fondement pour la physique moderne :</strong> base des travaux d’Einstein 🧑‍🔬 sur la relativité 🌌 (vitesse de la lumière = constante universelle ⚖️).<br />
-                            <br />
-                            📐 <strong>Standardisation du mètre (1983) :</strong> défini via la vitesse de la lumière 💡.
-                        </p>
-                    </div>
-                </div>
+<body>
+    <canvas id="particlesCanvas"></canvas>
+    <canvas id="hyperspaceCanvas"></canvas>
+    <a href="sources.html" class="return-button">📖 Sources</a>
 
-                <div id="p8" class="tab-content">
-                    <div class="container">
-                        <h1>📡 Technologies modernes</h1>
-                        <p>
-                            🌐 <strong>Fibre optique, GPS, télécommunications :</strong> basés sur la vitesse de propagation de la lumière ⚡.<br />
-                            <br />
-                            📡 <strong>LIDAR, mesures laser, temps de vol :</strong> utilisés en physique des particules ⚛️ pour des mesures précises 🎯.<br />
-                            <br />
-                            🧪 <strong>Méthodologie expérimentale :</strong> rigueur et ingéniosité de Fizeau 🧠 servent toujours d’exemple 📚.<br />
-                            <br />
-                            🧑‍🏫 <strong>Rôle éducatif :</strong> expérience simple à comprendre 💡, souvent reproduite dans des démonstrations scientifiques 🔍.
-                        </p>
-                    </div>
+    <div id="ui-wrapper">
+        <div class="tab-wrapper">
+            <div id="main" class="tab-content active">
+                <div class="container">
+                    <h1>🌌 La vitesse de la lumière 🌠</h1>
+                    <h2>L'expérience de Fizeau</h2>
                 </div>
-
-                <div id="p9" class="tab-content">
-                    <div class="container">
-                        <h1>📝 Conclusion</h1>
-                        <p>
-                            📌 <strong>Résumé des apports :</strong> une expérience simple 🛠️, un résultat fondamental 📊, un tournant pour la science 🔬.<br />
-                            <br />
-                            🤔 <strong>Réflexion finale :</strong> de la roue dentée de Fizeau ⚙️ aux satellites modernes 🛰️, mesurer la lumière 💡, c’est mesurer notre univers 🌌.
-                        </p>
+            </div>
+            <div id="p1" class="tab-content">
+                <div class="container">
+                    <h2>Sommaire</h2>
+                    <p>
+                        <strong>I.</strong> Introduction : Pourquoi mesurer la vitesse de la lumière ?<br />
+                        <strong>II.</strong> Le contexte scientifique avant Fizeau<br />
+                        <strong>III.</strong> L’expérience de Fizeau (1849) <br />
+                        <strong>IV.</strong> Apports immédiats de l’expérience <br />
+                        <strong>V.</strong> Progrès permis par l’expérience de Fizeau <br />
+                        <strong>VI.</strong> Héritage et lien avec aujourd’hui<br />
+                        <strong>VII.</strong> Conclusion<br />
+                    </p>
+                </div>
+            </div>
+            <div id="p2" class="tab-content">
+                <div class="container">
+                    <h1>🌟 La lumière voyage-t-elle instantanément ?</h1>
+                    <p>
+                        Débat ancien : lumière instantanée (Platon, Descartes) 🆚 vitesse finie (Galilée, Römer)
+                        ⚖️<br />
+                        Besoin scientifique du XIXe siècle 🧪 : précision 📏, progrès en optique 🔬, télécommunications
+                        naissantes 📡.
+                    </p>
+                </div>
+            </div>
+            <div id="p3" class="tab-content">
+                <div class="container">
+                    <h1>🚀 Premières tentatives :</h1>
+                    <p>
+                        Galilée (XVIIe siècle) 🔭 : méthode imprécise avec lanternes 🏮 → vitesse trop rapide à mesurer
+                        ⚡.<br />
+                        Römer (1676) 🌌 : mesure indirecte avec les éclipses des lunes de Jupiter 🪐 → première
+                        estimation (214 000 km/s) 📏.<br />
+                        <br />
+                        Limites de ces approches ⚠️ : dépendance aux phénomènes astronomiques 🌠, faible précision 🎯.
+                    </p>
+                </div>
+            </div>
+            <div id="p4" class="tab-content">
+                <div class="container">
+                    <h1>💡 L’expérience de Fizeau (1849)</h1>
+                    <p>
+                        <strong>🔬 Principe de l’expérience :</strong><br />
+                        Lumière envoyée sur un miroir via une roue dentée ⚙️.<br />
+                        Réflexion sur un miroir à 8 km 📏, retour à la roue 🔁.<br />
+                        À une certaine vitesse de rotation, la lumière est bloquée par la dent suivante ❌🦷 → mesure du
+                        temps aller-retour ⏱️.<br />
+                        <br />
+                        <strong>📊 Résultat obtenu :</strong><br />
+                        Estimation de la vitesse de la lumière à ~313 000 km/s 🚀 (très proche de la valeur actuelle ✅).
+                    </p>
+                </div>
+            </div>
+            <div id="p5" class="tab-content">
+                <div class="container">
+                    <h1>Vidéo de l'expérience</h1>
+                    <div class="video-item">
+                        <video controls width="100%">
+                            <source src="movie/vid1.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                        </video>
                     </div>
                 </div>
             </div>
-        </div>
-		<div class="tab-navigation">
-			<button id="prevBtn" onclick="prevTab()" aria-label="Revenir à l’onglet précédent">◀️ Retour</button>
-			<button id="nextBtn" onclick="nextTab()" aria-label="Aller à l’onglet suivant à la vitesse de la lumière">Suivant ▶️</button>
-		</div>
 
-        <div class="audio-controls-global">
-            <label for="volume">Volume : </label>
-            <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
-            <button id="playPause">▶️ Play</button>
-            <button id="replay">🔁 Rejouer</button>
-        </div>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2 id="modal-title"></h2>
-                <img id="modal-image" src="" alt="Modal Image" />
+            <div id="p6" class="tab-content">
+                <div class="container">
+                    <h1>⚡ Apports immédiats de l’expérience</h1>
+                    <p>
+                        <strong>🧪 Méthode expérimentale directe :</strong> première mesure purement terrestre 🌍.<br />
+                        <strong>🌈 Confirmation de la vitesse finie de la lumière :</strong> appui aux théories
+                        ondulatoires 🌊.<br />
+                        <strong>🔧 Avancée technologique :</strong> montre qu’on peut mesurer des vitesses extrêmes 🚀
+                        avec des outils mécaniques ⚙️.<br />
+                    </p>
+                </div>
+            </div>
+
+            <div id="p7" class="tab-content">
+                <div class="container">
+                    <h1>🚀 Progrès permis par l’expérience de Fizeau</h1>
+                    <p>
+                        🔬 <strong>Améliorations par Léon Foucault :</strong> utilisation de miroirs tournants 🪞➡️🌀 →
+                        plus grande précision 🎯.<br />
+                        <br />
+                        📏 <strong>Développement de la métrologie :</strong> la lumière devient une référence pour les
+                        mesures de distance 🌐.<br />
+                        <br />
+                        🧠 <strong>Fondement pour la physique moderne :</strong> base des travaux d’Einstein 🧑‍🔬 sur
+                        la relativité 🌌 (vitesse de la lumière = constante universelle ⚖️).<br />
+                        <br />
+                        📐 <strong>Standardisation du mètre (1983) :</strong> défini via la vitesse de la lumière 💡.
+                    </p>
+                </div>
+            </div>
+
+            <div id="p8" class="tab-content">
+                <div class="container">
+                    <h1>📡 Technologies modernes</h1>
+                    <p>
+                        🌐 <strong>Fibre optique, GPS, télécommunications :</strong> basés sur la vitesse de propagation
+                        de la lumière ⚡.<br />
+                        <br />
+                        📡 <strong>LIDAR, mesures laser, temps de vol :</strong> utilisés en physique des particules ⚛️
+                        pour des mesures précises 🎯.<br />
+                        <br />
+                        🧪 <strong>Méthodologie expérimentale :</strong> rigueur et ingéniosité de Fizeau 🧠 servent
+                        toujours d’exemple 📚.<br />
+                        <br />
+                        🧑‍🏫 <strong>Rôle éducatif :</strong> expérience simple à comprendre 💡, souvent reproduite
+                        dans des démonstrations scientifiques 🔍.
+                    </p>
+                </div>
+            </div>
+
+            <div id="p9" class="tab-content">
+                <div class="container">
+                    <h1>📝 Conclusion</h1>
+                    <p>
+                        📌 <strong>Résumé des apports :</strong> une expérience simple 🛠️, un résultat fondamental 📊,
+                        un tournant pour la science 🔬.<br />
+                        <br />
+                        🤔 <strong>Réflexion finale :</strong> de la roue dentée de Fizeau ⚙️ aux satellites modernes
+                        🛰️, mesurer la lumière 💡, c’est mesurer notre univers 🌌.
+                    </p>
+                </div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <div class="tab-navigation">
+        <button id="prevBtn" onclick="prevTab()" aria-label="Revenir à l’onglet précédent">◀️ Retour</button>
+        <button id="nextBtn" onclick="nextTab()"
+            aria-label="Aller à l’onglet suivant à la vitesse de la lumière">Suivant ▶️</button>
+    </div>
+
+    <div class="audio-controls-global">
+        <label for="volume">Volume : </label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        <button id="playPause">▶️ Play</button>
+        <button id="replay">🔁 Rejouer</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Modal Image" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
